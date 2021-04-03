@@ -9,7 +9,6 @@ type Props = {
 const TodoItem: React.FC<Props> = ({ item }) => {
   const [todoList, setTodoList] = useRecoilState(todoListState);
   const index = todoList.findIndex((listItem) => listItem === item);
-  console.log("hohoho");
 
   const editItemText = ({
     target: { value },
